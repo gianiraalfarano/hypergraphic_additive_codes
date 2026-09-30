@@ -12,7 +12,6 @@ The program computes every entry of Tables 1, 2, 3 and 4 of the paper and checks
 |---|---|
 | `section6.py` | the program |
 | `output.txt` | what the program prints (full run with SageMath 10.8) |
-| `LICENSE` | the licence (MIT: you can use and modify the code freely) |
 
 ## How to run it
 
