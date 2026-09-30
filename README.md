@@ -28,7 +28,7 @@ Other options:
 
 ```
 sage section6.py --quick     # about 4 minutes: skips the slowest part (the split Cayley hexagon)
-sage section6.py 5           # only Table 4 (you can give any of 1, 2, 4, 5)
+sage section6.py 5           # only Table 4 (you can give any of 1, 2, 3, 4)
 ```
 
 Without SageMath, the program also runs with Python and the pip version of SageMath (passagemath):
