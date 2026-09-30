@@ -3,7 +3,7 @@ Computations for Section 6 of the paper
 
     G. N. Alfarano, "Additive codes arising from hypergraphs".
 
-The program recomputes every entry of Tables 2, 3, 4 and 5 of the paper and
+The program recomputes every entry of Tables 1, 2, 3 and 4 of the paper and
 checks that it agrees with the value printed in the paper. It also checks the
 statements about the tables made in the text of Section 6.
 
@@ -12,7 +12,7 @@ How to run it (with SageMath installed):
     sage section6.py            all tables (about 20 minutes)
     sage section6.py --quick    skips the linear programs for the split Cayley
                                 hexagon, the slowest part (about 4 minutes)
-    sage section6.py 5          only Table 5 (any of 2, 3, 4, 5 can be given)
+    sage section6.py 5          only Table 4 (any of 1, 2, 3, 4 can be given)
 
 All linear and integer programs are solved exactly, with rational numbers
 (the "PPL" solver of SageMath).
@@ -308,7 +308,7 @@ def girth_distance_bound(k, h, g):
     return d
 
 # ===========================================================================
-# 3. Table 2: minimum distance of hypergraphic codes
+# 3. Table 1: minimum distance of hypergraphic codes
 # ===========================================================================
 # values printed in the paper:
 #   h, N, m, dperp, d, spectral, degree, girth-distance, Singleton, Griesmer, LP
@@ -360,7 +360,7 @@ def table2():
           lp_same_with_dperp_2)
 
 # ===========================================================================
-# 4. Table 3: critical exponent of hypergraphic codes
+# 4. Table 2: critical exponent of hypergraphic codes
 # ===========================================================================
 # values printed in the paper:
 #   N, chi_w, crit, alpha-bound, Delta-bound, t0, Kung-type, k-h+1
@@ -397,7 +397,7 @@ def table3():
                   + ['  ' + compare('Table 3, ' + name, row, TABLE3[name])], widths)
 
 # ===========================================================================
-# 5. Table 4: some additive codes that are not hypergraphic codes
+# 5. Table 3: some additive codes that are not hypergraphic codes
 # ===========================================================================
 # The two codes found by Kurz (arXiv:2412.14615, Section F): each pair of
 # binary vectors spans one of the lines (2-dimensional subspaces) of F_2^7.
@@ -510,7 +510,7 @@ def table4():
                   + ['  ' + compare('Table 4, ' + name, row, TABLE4[name])], widths)
 
 # ===========================================================================
-# 6. Table 5: upper bounds on the optimal length n_2(k,2;s)
+# 6. Table 4: upper bounds on the optimal length n_2(k,2;s)
 # ===========================================================================
 def n2_kurz(k, s):
     """The exact values n_2(k,2;s), taken from Kurz, arXiv:2412.14615,
